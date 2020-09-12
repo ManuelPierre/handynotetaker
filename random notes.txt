@@ -1,0 +1,40 @@
+// console.log(data);
+
+    // var newNote = req.body;
+
+    // newNote.routeName = newNote.name.replace(/\s+/g, "").toLowerCase();
+
+    // console.log(newNote);
+
+    // Notes.push(newNote);
+    // var notes = JSON.parse(data);
+    // res.json(newNote);
+    // console.log(notes)
+
+
+
+    // app.get("/api/notes/:note", function (req, res) {
+//     var chosen = req.params.note;
+
+//     console.log(chosen);
+
+//     for (var i = 0; i < notes.length; i++) {
+//         if (chosen === notes[i].routeName) {
+//             return res.json(notes[i]);
+//         }
+//     }
+
+//     return res.json(false);
+// });
+
+
+fs.readFile("./db/db.json", "utf8", function (error, data) {
+  if (error) {
+    return console.log(error);
+    const notes = JSON.parse(data);
+  }
+
+
+ // // res.json(newNote);
+
+  // // const notes = JSON.parse(data);

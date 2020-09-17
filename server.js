@@ -67,10 +67,9 @@ app.post("/api/notes", function (req, res) {
     console.log(req.body);
     let newNote = req.body;
     newNote.id = uniqid();
-    //   notes.push(newNote);
-    // updateDB();
+
     res.json(req.body);
-    //   return console.log("Added new note: " + newNote.title);
+
 
     fs.readFile("./db/db.json", "utf8", function (error, data) {
         if (error) {
